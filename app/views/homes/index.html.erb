@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mouse 的主页</title>
+<meta http-equiv="Content-Language" content="en-us" />
+<%= stylesheet_link_tag 'templatemo_style.css' %>
+<meta name="author" content="Niall Doherty" />
+<%= javascript_include_tag "homes/jquery-1.2.1.pack.js" %>
+<%= javascript_include_tag "homes/jquery-easing.1.2.pack.js" %>
+<%= javascript_include_tag "homes/jquery-easing-compatibility.1.2.pack.js" %>
+<%= javascript_include_tag "homes/coda-slider.1.1.1.pack.js" %>
+
+<script type="text/javascript">
+    jQuery(window).bind("load", function() {
+    jQuery("div#slider1").codaSlider()
+    // jQuery("div#slider2").codaSlider()
+    // etc, etc. Beware of cross-linking difficulties if using multiple sliders on one page.
+    });
+    function query(content){ 
+      var address;
+      content = document.getElementById("content").value;
+      address = "http://www.google.com.hk/search?client=ubuntu&channel=fs&ie=utf-8&oe=utf-8&q=" + content;
+      window.open(address);
+    };
+
+    function CallMessage(){ 
+      alert("sorry,somethings are wrong!");
+    }
+    </script>
+</head>
+<body>
+<div id="templatemo_site_title_bar_wrapper">
+  <div id="templatemo_site_title_bar">
+    <div id="site_title">
+      <h1><a href="" target="_parent"> Mouse <span>Home</span> </a></h1>
+    </div>
+    <div id="twitter"><a onClick = "query()">google</a></div>
+    <div id='contents'><a><input class="field" id="content" type="text"  onKeyPress="if(event.keyCode==13) query();"></a>
+  </div>
+  <!-- end of templatemo_site_title_bar -->
+</div>
+<!-- end of templatemo_site_title_bar_wrapper -->
+<div id="templatemo_content_wrapper">
+  <div id="templatemo_content">
+    <!-- start of slider -->
+    <div class="slider-wrap">
+      <div id="slider1" class="csw">
+        <div class="panelContainer">
+          <div class="panel" title="Home">
+            <div class="wrapper">
+              <h2>Welcome to my website -Mouse-</h2>
+              <div class="image_wrapper fl_image"> <img src="images/templatemo_image_012.jpg" alt="image"/> </div>
+              <p class="em_text">1. CSDN 大学生联盟  <a href="http://www.csdn.com/" target="_blank">CSDN</a>
+              &nbsp;&nbsp;
+              2.后台模板<a href="www.865171.cn">Template</a>
+              <a href="www.sitediy.com/">Template2</a></p> 
+              <p class="em_text">3. GitHub for myself  <a href="http://www.github.com/" target="_blank">GitHub</a> </p>
+              <p class="em_text">4. Heroku <a href="http://www.heroku.com/" target="_blank">Heroku</a></p>
+              <p class="em_text">5. 百度音乐盒 <a href="http://box.zhangmen.baidu.com/m?rf=idx&ct=134217728&tn=baidumt&gate=5" target="_blank">Music</a></p>
+              <p class="em_text">6. ProGit <a href="http://progit.org/book/zh/">ProGit</a></p>
+              <p>(A good source storage management tools, in particular, to use in ubuntu is cool)</p>
+              <p><a href="#2" class="cross-link" title="Go to Page 2">Next Page &#187;</a></p>
+            </div>
+          </div>
+          <div class="panel" title="Services">
+            <div class="wrapper">
+              <h2>Services</h2>
+              <p>Donec porta augue a justo consectetur nec fringilla sem feugiat. Vivamus non lacus elit. Duis tortor orci, consequat ac ullamcorper ac, pulvinar et nunc. Curabitur sed massa nulla, quis pellentesque neque. Phasellus euismod congue felis eget lacinia.</p>
+              <ul class="service_list">
+                <li><a href="" title="www.865171.cn" target="_parent">www.865171.cn</a> can be downloaded from TemplateMo.com website.</li>
+                <li>Vivamus augue arcu, lacinia quis varius non, ultrices sit amet tortor.</li>
+                <li>Nam vestibulum cursus tortor, suscipit vestibulum lorem sagittis at.</li>
+                <li>Donec pretium dapibus nibh, ac ultrices neque pretium sed.</li>
+                <li>Maecenas non felis vitae nulla ultrices convallis sed eget quam.</li>
+                <li>Etiam porttitor posuere dui, et imperdiet erat mollis sed.</li>
+              </ul>
+              <div class="cleaner_h20"></div>
+              <p><a href="#1" class="cross-link" title="Go to Page 1">&#171; Previous Page</a> | <a href="#3" class="cross-link" title="Go to Page 3">Next Page &#187;</a></p>
+            </div>
+          </div>
+          <div class="panel" title="Portfolio">
+            <div class="wrapper">
+              <h2>Protfolio</h2>
+              <div class="portfolio_box margin_r50">
+                <h3>Project One</h3>
+                <div class="port_img"> <img src="images/templatemo_image_02.jpg" alt="project 1" /> </div>
+                <div class="port_content">
+                  <p> Etiam ultrices neque id augue rhoncus in gravida eros dictum. Integer interdum sapien id diam tempor dapibus.</p>
+                  <a href="" target="_blank">Preview</a> </div>
+                <div class="cleaner"></div>
+              </div>
+              <div class="portfolio_box margin_r50">
+                <h3>Project Two</h3>
+                <div class="port_img"> <img src="images/templatemo_image_03.jpg" alt="project 2" /> </div>
+                <div class="port_content">
+                  <p>Morbi orci urna, tincidunt vel eleifend eu, volutpat sed metus. Donec id orci urna. Pellentesque id massa eget dui lobortis sodales ut non dolor.</p>
+                  <a href="" target="_blank">Preview</a>
+                  <div class="cleaner"></div>
+                </div>
+              </div>
+              <div class="portfolio_box">
+                <h3>Project Three</h3>
+                <div class="port_img"> <img src="images/templatemo_image_04.jpg" alt="project 3" /> </div>
+                <div class="port_content">
+                  <p> semper a erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate nunc a nulla placerat ultrices accumsan urna hendrerit.</p>
+                  <a href="" target="_blank">Preview</a> </div>
+                <div class="cleaner"></div>
+              </div>
+              <div class="cleaner_h10"></div>
+              <p><a href="#2" class="cross-link" title="Go to Page 2">&#171; Previous Page</a> | <a href="#4" class="cross-link" title="Go to Page 4">Next Page &#187;</a></p>
+            </div>
+          </div>
+          <div class="panel" title="后台模板－Web">
+            <div class="wrapper">
+              <h2>About Our Company</h2>
+              <div class="image_wrapper fl_image"> <img src="images/templatemo_image_05.jpg" alt="image 1"/> </div>
+              <p>Quisque nec dictum tortor. Etiam ultrices neque id augue rhoncus in gravida eros dictum. Integer interdum sapien id diam tempor dapibus. Aliquam lobortis nunc risus. Suspendisse <a href="">sodales</a> massa velit. Quisque odio quam, pulvinar sit amet convallis eget, venenatis ut turpis. Donec ultricies eros et magna viverra venenatis et at arcu. Suspendisse quis tincidunt orci. Nam lobortis varius porttitor.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer enim metus, convallis id semper vel, posuere ac dui. Integer <a href="">vestibulum</a>, elit non lobortis sodales, dui nibh imperdiet turpis, id lobortis enim turpis eget ante. Donec non magna nunc. Donec ultricies fermentum sapien in facilisis.</p>
+              <div class="image_wrapper fr_image"> <img src="images/templatemo_image_06.jpg" alt="image 2"/> </div>
+              <p>Etiam vulputate mattis neque in egestas. Donec porta augue a justo consectetur nec fringilla sem feugiat. Vivamus non lacus elit. Duis tortor orci, consequat ac <a href="">ullamcorper</a> ac, pulvinar et nunc. Curabitur sed massa nulla, quis pellentesque neque. Phasellus euismod congue felis eget lacinia.</p>
+              <p><a href="#3" class="cross-link" title="Go to Page 3">&#171; Previous Page</a> | <a href="#5" class="cross-link" title="Go to Page 5">Next Page &#187;</a></p>
+            </div>
+          </div>
+          <div class="panel" title="Contact me">
+            <div class="wrapper">
+              <h2>Contact Information</h2>
+              <div id="contact_form">
+                <form method="post" name="contact" action="">
+                  <label for="author">Name:</label>
+                  <input type="text" id="author" name="author" class="required input_field" />
+                  <div class="cleaner_h10"></div>
+                  <label for="email">Email:</label>
+                  <input type="text" id="email" name="email" class="validate-email required input_field" />
+                  <div class="cleaner_h10"></div>
+                  <label for="phone">Phone:</label>
+                  <input type="text" name="subject" id="subject" class="input_field" />
+                  <div class="cleaner_h10"></div>
+                  <label for="text">Message:</label>
+                  <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
+                  <div class="cleaner_h10"></div>
+                  <!input style="font-weight: bold;" type="submit" class="submit_btn"   value=" Send " onclick="CallMessage()" />
+                </form>
+              </div>
+              <div class="address_info">
+                <h3>Welcome to</h3>
+                If you want to express you advises<br />
+                or contact me,<br />
+                You can leave your information here <br />
+                <h4>But sorry ,now it isn't work!</h4>
+              </div>
+              <div class="cleaner_h20"></div>
+              <p><a href="#4" class="cross-link" title="Go to Page 4">&#171; Previous Page</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- .panelContainer -->
+      </div>
+      <!-- #slider1 -->
+    </div>
+    <!-- .slider-wrap -->
+    <p id="cross-links" style="width:0px; height: 0px; font-size:0; overflow: hidden;"> Same-page cross-link controls:<br />
+      <a href="#1" class="cross-link">Page 1</a> | <a href="#2" class="cross-link">Page 2</a> | <a href="#3" class="cross-link">Page 3</a> | <a href="#4" class="cross-link">Page 4</a> | <a href="#5" class="cross-link">Page 5</a> </p>
+    <!-- end of slider -->
+  </div>
+  <!-- end of templatemo_content -->
+</div>
+<!-- end of templatemo_content_wrapper -->
+<div id="templatemo_footer_wrapper">
+  <div id="templatemo_footer"> Copyright © 2010 <a href="#">Mouse -Wando</a>
+    <div class="cleaner_h10"></div>
+    Designed by <a href="http://www.csdn.com" target="_parent">Mouse </a> </div>
+  <!-- end of templatemo_footer -->
+</div>
+<!-- end of templatemo_footer_wrapper -->
+</body>
+</html>
+
